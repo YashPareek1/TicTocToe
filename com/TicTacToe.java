@@ -15,12 +15,13 @@ public class TicTacToe
 	            for(int j=0;j<3;j++)
 	            {
 	            	
-	                board[i][j] = '0';
+	                board[i][j] = ' ';
 	
                 }
              }
 	        printBoard(board);
-	        
+			choose();
+
       }
 
 
@@ -35,5 +36,16 @@ public class TicTacToe
 	            System.out.println();
 	        }
 	    }
-	 
+	 public static void choose() {
+	        Scanner s = new Scanner(System.in);
+	        System.out.println("Choose from X or O");
+	        String game = s.next();
+	        char player = 0;
+	        char computer;
+	        if (player == 'X') {
+	            computer = 'O';
+	        } else {
+	            computer = 'X';
+	        }
+	    }
 }
