@@ -30,10 +30,12 @@ public class TicTacToe
 	        for (int i=0;i<3;i++) {
 	            // j represents the column
 	            for (int j=0;j<3;j++) {
-	            	System.out.print("_"+board[i][j]+"_"+"|"); //for not printing to in oneline
-	           
+	            	System.out.print(board[i][j]+"|"); //for not printing to in oneline
+	            	
 	            }
+	            
 	            System.out.println();
+	            System.out.println("-------");
 	        }
 	    }
 	 public static void choose() {
